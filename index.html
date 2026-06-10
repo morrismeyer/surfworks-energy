@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Surfworks Energy Consulting — Systems Engineering</title>
-<meta name="description" content="High-performance systems engineering consultancy delivering infrastructure across ML acceleration, storage networking, computational storage, and data protection.">
+<title>Surfworks Energy Consulting | Data Center Power Economics &amp; Systems Engineering</title>
+<meta name="description" content="Surfworks Energy Consulting helps data center operators in PJM and the Dominion Zone cut capacity and transmission costs with battery storage: coincident peak assessments, microgrid and MVDC campus architecture, and the high-performance systems engineering underneath.">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Source+Sans+3:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -157,6 +157,10 @@ section + section { border-top: 1px solid var(--border); }
 .card-frogger::after { background: var(--accent); }
 .card-warpforge::after { background: var(--purple); }
 .card-bubble::after { background: var(--amber); }
+.card-assess::after { background: var(--green); }
+.card-research::after { background: var(--accent); }
+.card-interconnect::after { background: var(--amber); }
+.card-econ::after { background: var(--rose); }
 
 .ptag {
   font-family: 'JetBrains Mono', monospace;
@@ -172,6 +176,7 @@ section + section { border-top: 1px solid var(--border); }
 .ptag-net { background: rgba(59,130,246,0.12); color: var(--accent); }
 .ptag-ml { background: rgba(167,139,250,0.12); color: var(--purple); }
 .ptag-fpga { background: rgba(245,158,11,0.12); color: var(--amber); }
+.ptag-rose { background: rgba(251,113,133,0.12); color: var(--rose); }
 
 .project-card h3 {
   font-family: 'DM Serif Display', serif;
@@ -279,7 +284,8 @@ footer a:hover { color: var(--text-bright); }
   <div class="container header-inner">
     <a href="#" class="logo">Surfworks<span>.</span></a>
     <nav>
-      <a href="#projects">Projects</a>
+      <a href="#energy">Energy</a>
+      <a href="#systems">Systems</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -288,34 +294,111 @@ footer a:hover { color: var(--text-bright); }
 
 <section class="hero">
   <div class="container">
-    <h1>High-performance systems engineering</h1>
-    <p class="hero-sub">Surfworks Energy Consulting delivers infrastructure across ML acceleration, storage networking, computational storage, and data protection. Founded by Morris Meyer in Sterling, Virginia.</p>
+    <h1>Data center power economics, grid-scale storage, and the systems engineering underneath</h1>
+    <p class="hero-sub">Surfworks Energy Consulting helps data center operators in PJM and the Dominion Zone cut capacity and transmission costs with battery storage, and builds the high-performance infrastructure that powers the analysis. Founded by Morris Meyer in Sterling, Virginia.</p>
     <div class="hero-stats">
       <div>
         <div class="stat-val">39</div>
         <div class="stat-lbl">Years Engineering</div>
       </div>
       <div>
+        <div class="stat-val">9</div>
+        <div class="stat-lbl">Years Grid-Scale Storage</div>
+      </div>
+      <div>
         <div class="stat-val">30</div>
         <div class="stat-lbl">Years Java</div>
       </div>
       <div>
-        <div class="stat-val">4</div>
-        <div class="stat-lbl">Active Projects</div>
-      </div>
-      <div>
-        <div class="stat-val">9.2 MB</div>
-        <div class="stat-lbl">Smallest Container</div>
+        <div class="stat-val">IEC 62443</div>
+        <div class="stat-lbl">OT Security Certified</div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="projects">
+<section id="energy">
   <div class="container">
-    <div class="sec-label">Projects</div>
-    <div class="sec-title">Current Work</div>
-    <p class="sec-desc">Four active projects spanning the full systems stack — from FPGA bitstreams to GPU compilers to kernel modules to cross-language data protection.</p>
+    <div class="sec-label">Practice 01 &middot; Energy</div>
+    <div class="sec-title">Data Center Energy Consulting</div>
+    <p class="sec-desc">Power is the largest operating cost in the building. Surfworks quantifies, designs, and de-risks the storage and interconnection strategies that bring it down.</p>
+
+    <div class="projects-grid">
+
+      <div class="project-card card-assess">
+        <span class="ptag ptag-sec">Flagship Engagement</span>
+        <h3>Coincident Peak Assessment</h3>
+        <p>Fixed-fee assessment quantifying how co-located battery storage cuts PJM 5CP capacity and Dominion Zone 12CP transmission charges. Backtested against your actual interval load across three measurement years, with board-ready pro formas integrating GS-5 rate mechanics, the federal investment tax credit, Virginia Code 58.1-3660 exemptions, and C-PACE financing.</p>
+        <div class="ptech">
+          <span>PJM 5CP</span>
+          <span>Dominion 12CP</span>
+          <span>GS-5</span>
+          <span>BESS Dispatch</span>
+          <span>ITC</span>
+          <span>C-PACE</span>
+        </div>
+        <div class="pmetric">
+          <div>
+            <div class="mv">3</div>
+            <div class="ml">Measurement Years Backtested</div>
+          </div>
+          <div>
+            <div class="mv">17</div>
+            <div class="ml">Defining Peak Hours / Yr</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card card-research">
+        <span class="ptag ptag-net">Surfworks Energy Research</span>
+        <h3>Campus Architecture</h3>
+        <p>Reference architecture for microgrid-class data center campuses: behind-the-meter storage, district thermal integration, an MVDC ring interconnecting campuses with community solar and storage, and a distribution system operator envelope under Virginia interconnection rules. Includes ride-through analysis of the July 2024 Eastern Interconnection event in which roughly 1,500 MW of data center load disconnected.</p>
+        <div class="ptech">
+          <span>BESS</span>
+          <span>MVDC</span>
+          <span>Microgrids</span>
+          <span>DSO</span>
+          <span>Community Solar</span>
+          <span>District Thermal</span>
+        </div>
+      </div>
+
+      <div class="project-card card-interconnect">
+        <span class="ptag ptag-fpga">Markets &amp; Protocols</span>
+        <h3>Grid Interconnection</h3>
+        <p>Flexible-load interconnection and dispatch for data center participation in wholesale markets: PJM and Dominion interconnection standards, ERCOT Controllable Load Resource qualification, ICCP/TASE.2 control center integration, and OpenADR demand response signaling.</p>
+        <div class="ptech">
+          <span>PJM</span>
+          <span>Dominion</span>
+          <span>ERCOT CLR</span>
+          <span>ICCP/TASE.2</span>
+          <span>OpenADR</span>
+          <span>SCADA / Modbus</span>
+        </div>
+      </div>
+
+      <div class="project-card card-econ">
+        <span class="ptag ptag-rose">Policy &amp; Ratepayer Analysis</span>
+        <h3>Grid Economics</h3>
+        <p>Systemwide analysis of how storage-flattened data center load suppresses capacity and energy clearing prices and defers transmission buildout, quantifying residential ratepayer impacts against the 2024 JLARC data center study. Grounded in four years chairing the Loudoun County Environmental Commission's Sustainable Energy Committee, a drafted Virginia community choice aggregation bill, and active Virginia SCC engagement.</p>
+        <div class="ptech">
+          <span>PJM Capacity</span>
+          <span>Merit Order</span>
+          <span>JLARC</span>
+          <span>Virginia SCC</span>
+          <span>Loudoun County</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="systems">
+  <div class="container">
+    <div class="sec-label">Practice 02 &middot; Systems</div>
+    <div class="sec-title">The Engineering Underneath</div>
+    <p class="sec-desc">Four active projects spanning the full systems stack, from FPGA bitstreams to GPU compilers to kernel modules to cross-language data protection. The same hands that model the megawatts build the infrastructure.</p>
 
     <div class="projects-grid">
 
@@ -377,7 +460,7 @@ footer a:hover { color: var(--text-bright); }
       <div class="project-card card-warpforge">
         <span class="ptag ptag-ml">ML Acceleration</span>
         <h3>WarpForge ML Compiler</h3>
-        <p>Open-source ML compiler eliminating GPU vendor lock-in with equivalent NVIDIA CUDA and AMD ROCm backends through pure Java FFM bindings — no native JNI code. Full GraalPy PyTorch-to-GPU pipeline spanning model tracing, StableHLO IR, and hardware-specific code generation targeting cuBLAS and hipBLAS.</p>
+        <p>Open-source ML compiler eliminating GPU vendor lock-in with equivalent NVIDIA CUDA and AMD ROCm backends through pure Java FFM bindings, with no native JNI code. Full GraalPy PyTorch-to-GPU pipeline spanning model tracing, StableHLO IR, and hardware-specific code generation targeting cuBLAS and hipBLAS.</p>
         <div class="ptech">
           <span>Java FFM</span>
           <span>GraalPy</span>
@@ -415,7 +498,7 @@ footer a:hover { color: var(--text-bright); }
     <div class="about-grid">
       <div class="about-text">
         <p><strong>Senior Systems Architect</strong> with 39 years of software and computer engineering experience across energy, embedded systems, security, and high-performance storage. Previously at <strong>Wärtsilä</strong> (Senior Systems Architect, GEMS energy operating system), <strong>Greensmith</strong> (IEC 62443 cybersecurity certification, SCADA commissioning), and <strong>Oracle</strong> (JavaFX graphics team lead, HotSpot-Graal GPU compiler for the open-source Sumatra project).</p>
-        <p>Security lineage traces to <strong>Tristrata Security</strong>, founded by John Atalla — inventor of the PIN and Hardware Security Module. Career-long focus on environments where security is non-negotiable: IEC 62443 for industrial control systems, air-gapped DoD networks, and zero-CVE container architectures.</p>
+        <p>Security lineage traces to <strong>Tristrata Security</strong>, founded by John Atalla, inventor of the PIN and Hardware Security Module. Career-long focus on environments where security is non-negotiable: IEC 62443 for industrial control systems, air-gapped DoD networks, and zero-CVE container architectures.</p>
         <p>Purdue BSCE. Penn State MS in Renewable Energy &amp; Sustainability Systems. Six years on the JDK platform at Oracle. 30 years of Java.</p>
       </div>
       <div class="about-details">
@@ -425,11 +508,11 @@ footer a:hover { color: var(--text-bright); }
           <dt>Primary Languages</dt>
           <dd>Java (30 years), Go, C, Python, TypeScript</dd>
           <dt>Domains</dt>
-          <dd>ML Compilers, Storage Networking, Computational Storage, Data Protection, Energy Systems</dd>
+          <dd>Data Center Power Economics, Grid-Scale Storage, ML Compilers, Storage Networking, Computational Storage</dd>
           <dt>Security</dt>
           <dd>IEC 62443, CNSA 2.0, TLS 1.3, Air-gapped Networks, Zero-CVE Containers</dd>
           <dt>Education</dt>
-          <dd>MS Renewable Energy — Penn State<br>BS Computer &amp; Electrical Engineering — Purdue</dd>
+          <dd>MS Renewable Energy, Penn State<br>BS Computer &amp; Electrical Engineering, Purdue</dd>
           <dt>LinkedIn</dt>
           <dd><a href="https://www.linkedin.com/in/morrismeyer/" style="color:var(--accent);">linkedin.com/in/morrismeyer</a></dd>
         </dl>
@@ -451,7 +534,7 @@ footer a:hover { color: var(--text-bright); }
 
 <footer>
   <div class="container">
-    <p>&copy; 2025 Surfworks Energy Consulting, LLC &nbsp;·&nbsp; Sterling, Virginia &nbsp;·&nbsp; <a href="mailto:morris@surfworks.energy">morris@surfworks.energy</a></p>
+    <p>&copy; 2026 Surfworks Energy Consulting, LLC &nbsp;·&nbsp; Sterling, Virginia &nbsp;·&nbsp; <a href="mailto:morris@surfworks.energy">morris@surfworks.energy</a></p>
   </div>
 </footer>
 
